@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Main from '../components/Main.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<div>
+			<Header></Header>
+			<Main></Main>
+		</div>
+	</body>
+</html>
+<style>
+	div{
+		width: 100%;
+		height: 100%;
+		background-image: url("https://static.vecteezy.com/system/resources/previews/002/042/841/non_2x/webluxurious-black-background-with-a-combination-of-gold-shining-in-a-3d-style-graphic-design-element-elegant-decoration-eps-10-vector.jpg");
+		background-size: cover;
+	}
+</style>

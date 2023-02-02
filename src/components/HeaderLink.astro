@@ -1,0 +1,23 @@
+---
+const root = ["HOME","ABOUT","SERVICES","HELP"]
+---
+<div>
+	{
+		root.map(element=><a>{element}</a>)
+	}
+</div>
+
+<style>
+	a {
+		margin-right: 5vw;
+		text-decoration: none;
+		color: #f6ecc5;
+		font-size: 1.5vw;
+		font-style: oblique;
+		-webkit-text-stroke: 0.8px #d7a409;
+		cursor: pointer;
+	}
+	a:hover{
+		color: rgba(216, 117, 4, 0.961);
+	}
+</style>
